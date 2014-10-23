@@ -63,6 +63,8 @@ object Hanoi {
             type Out = Out4
           }
   }
-  // type Res = (Left.type, Center.type) :: (Left.type, Right.type) :: (Center.type, Right.type) :: HNil
-  // implicitly[Move.Aux[_2, Left.type, Right.type, Center.type, Res]]
+  // type Two = (Left.type, Center.type) :: (Left.type, Right.type) :: (Center.type, Right.type) :: HNil
+  // type Three = (Left.type, Right.type) :: (Left.type, Center.type) :: (Right.type, Center.type) :: (Left.type, Right.type) :: (Center.type, Left.type) :: (Center.type, Right.type) :: (Left.type, Right.type) :: HNil
+  // implicitly[Move.Aux[_2, Left.type, Right.type, Center.type, Two]]
+  // implicitly[Move.Aux[_3, Left.type, Right.type, Center.type, Three]]
 }
